@@ -1,0 +1,20 @@
+
+<div class="border container rounded mt-3  bg-white" style="width:40%; height:60%; margin: 0 auto;">
+    <div class="row ">
+        <div class="col" >
+          <form action="/campground/<%= camp_id %>/comments/<%= comment._id%>?_method=PUT" method="POST" >
+            <h3 class="text-primary">Edit Comment</h3>
+              <label ><strong>Text</strong></label>
+              <div class="form-group">
+                <input class="form-control" type="text" name="text" value="<%=comment.text %>">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-danger btn-block">Submit</button>
+              </div>
+              <a href="/campground/<%= camp_id%>"><strong>Go Back</strong></a>
+            </form>
+      </div>
+    </div>
+    </div>
+    
+    
